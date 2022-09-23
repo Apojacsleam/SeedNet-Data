@@ -24,7 +24,7 @@ pip install matplotlib
 The original data of the international trade networks of maize seeds and rice seeds analyzed in this paper are extracted from the UN Comtrade database (available at https://comtrade.un.org/, accessed on 22 September 2022). These two seeds are in the chapter of Cereals. The maize seeds are under Heading 1005 with HS code 100510, while the rice seeds are under Heading 1006 with HS code 100610. Since the data sets for year 2019 are incomplete, we take the data of maize seed and rice seed from 1990 to 2018 in Comtrade database for analysis in this work.
 
 ## Data Pre-processing
-The data is stored in ```.npz``` file provided by the numpy package and ```.gpickle``` files provided by the networkx package. You may need some pre-processing work before you can use the data from the network. You can place the following code in front of your Python code to get the network for the specified year and the specified Hs code using the ```GetGraph()``` function.
+The data is stored in ```.npz``` file provided by the numpy package and ```.gpickle``` files provided by the networkx package. You may need some pre-processing work before you can use the data from the network. You can place the following code  (named DataProcess.py in this repository) in front of your Python code to get the network for the specified year and the specified Hs code using the ```GetGraph()``` function.
 
 ```python
 import numpy as np
@@ -51,3 +51,4 @@ def GetGraph(Hscode, years):
         Graph.remove_node(Gnode)
     return Graph
 ```
+In particular, the names you get for the nodes in the network are abbreviations for economies, and the link is a directed weighted edge indicating the direction of trade.
