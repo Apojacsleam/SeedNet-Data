@@ -33,6 +33,7 @@ npz_file = np.load('./Data/iSTNs_Years_ComCodes.npz')
 Years, Hscodes, NotEconomy = npz_file['Years'], npz_file['Hscodes'], npz_file['NotEconomy']
 
 
+# Hs code of maize seed: 100510, Hs code of rice seed: 100610
 def GetGraph(Hscode, years):
     Graph = nx.read_gpickle(f'./Data/iSeedTradeNetwork_{Hscode}_{year}.gpickle')
     GraphNodes = Graph.nodes()
