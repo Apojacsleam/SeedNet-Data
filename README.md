@@ -1,4 +1,4 @@
-# SeedNet-Data
+# Introduction to data repository
 
 This Github Repository stores data to accompany the paper "Statistical properties of the international seed trade networks of rice and maize". All figures, tables and conclusions in the paper are based on the data stored in this Github repository.
 
@@ -23,5 +23,5 @@ pip install matplotlib
 
 The original data of the international trade networks of maize seeds and rice seeds analyzed in this paper are extracted from the UN Comtrade database (available at https://comtrade.un.org/, accessed on 22 September 2022). These two seeds are in the chapter of Cereals. The maize seeds are under Heading 1005 with HS code 100510, while the rice seeds are under Heading 1006 with HS code 100610. Since the data sets for year 2019 are incomplete, we take the data of maize seed and rice seed from 1990 to 2018 in Comtrade database for analysis in this work.
 
-## Data Pre-Processing
+## Data Pre-processing
 
